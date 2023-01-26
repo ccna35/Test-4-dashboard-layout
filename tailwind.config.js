@@ -13,6 +13,7 @@ module.exports = {
           200: "#37404a",
           300: "#333a40",
           400: "#464f5b",
+          400: "#3a444e",
         },
       },
       fontFamily: {
@@ -20,6 +21,9 @@ module.exports = {
       },
       height: {
         nav: "70px",
+      },
+      width: {
+        leftSide: "16.25rem",
       },
       boxShadow: {
         leftPanel: "0 0.5rem 1rem rgba(0, 0, 0, 0.15)",

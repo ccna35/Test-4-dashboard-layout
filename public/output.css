@@ -619,6 +619,10 @@ video {
   left: -0.25rem;
 }
 
+.top-0{
+  top: 0px;
+}
+
 .isolate{
   isolation: isolate;
 }
@@ -763,6 +767,10 @@ video {
   height: 100%;
 }
 
+.h-nav{
+  height: 70px;
+}
+
 .h-6{
   height: 1.5rem;
 }
@@ -771,12 +779,20 @@ video {
   min-height: 100vh;
 }
 
+.w-leftSide{
+  width: 16.25rem;
+}
+
+.w-28{
+  width: 7rem;
+}
+
 .w-full{
   width: 100%;
 }
 
-.w-96{
-  width: 24rem;
+.w-8{
+  width: 2rem;
 }
 
 .w-6{
@@ -1655,14 +1671,9 @@ video {
   border-style: none;
 }
 
-.bg-black{
+.bg-secondary-400{
   --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-slate-700{
-  --tw-bg-opacity: 1;
-  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+  background-color: rgb(58 68 78 / var(--tw-bg-opacity));
 }
 
 .bg-blue-700{
@@ -1670,18 +1681,9 @@ video {
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 
-.bg-gray-900{
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
-}
-
 .bg-\[rgb\(255\2c 0\2c 0\)\]{
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-opacity-0{
-  --tw-bg-opacity: 0;
 }
 
 .decoration-slice{
@@ -1796,6 +1798,11 @@ video {
 
 .p-4{
   padding: 1rem;
+}
+
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .text-left{
@@ -1929,6 +1936,11 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-gray-400{
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .text-\[\#336699\]\/\[\.35\]{
@@ -2118,6 +2130,18 @@ video {
   mix-blend-mode: plus-lighter;
 }
 
+.shadow-leftPanel{
+  --tw-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  --tw-shadow-colored: 0 0.5rem 1rem var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-navbar{
+  --tw-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  --tw-shadow-colored: 0 0.5rem 1rem var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .shadow{
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -2276,8 +2300,73 @@ video {
   --tw-bg-opacity: 0.5;
 }
 
+.shrink-leftSide{
+  grid-template-columns: 4.375rem auto;
+}
+
+.extend-leftSide{
+  grid-template-columns: 16.25rem auto;
+}
+
+.before\:absolute::before{
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.before\:top-0::before{
+  content: var(--tw-content);
+  top: 0px;
+}
+
+.before\:left-0::before{
+  content: var(--tw-content);
+  left: 0px;
+}
+
+.before\:-z-10::before{
+  content: var(--tw-content);
+  z-index: -10;
+}
+
+.before\:block::before{
+  content: var(--tw-content);
+  display: block;
+}
+
+.before\:h-screen::before{
+  content: var(--tw-content);
+  height: 100vh;
+}
+
+.before\:w-screen::before{
+  content: var(--tw-content);
+  width: 100vw;
+}
+
+.before\:-translate-x-full::before{
+  content: var(--tw-content);
+  --tw-translate-x: -100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.before\:bg-slate-400::before{
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+}
+
+.before\:bg-opacity-50::before{
+  content: var(--tw-content);
+  --tw-bg-opacity: 0.5;
+}
+
 .hover\:font-bold:hover{
   font-weight: 700;
+}
+
+.hover\:text-white:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .before\:hover\:text-center:hover::before{
@@ -2364,7 +2453,29 @@ video {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
-  .md\:grid-cols-sidebar{
+  .md\:grid-cols-minisidebar{
+    grid-template-columns: 4.375rem auto;
+  }
+
+  .md\:place-items-center{
+    place-items: center;
+  }
+
+  .md\:justify-center{
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:block{
+    display: block;
+  }
+
+  .lg\:hidden{
+    display: none;
+  }
+
+  .lg\:grid-cols-sidebar{
     grid-template-columns: 16.25rem auto;
   }
 }

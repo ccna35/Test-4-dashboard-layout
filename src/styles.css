@@ -7,6 +7,14 @@
 .show {
   @apply translate-x-0;
 }
+
 .show-bg {
   @apply bg-opacity-50;
+}
+
+.shrink-leftSide {
+  @apply grid-cols-minisidebar;
+}
+.extend-leftSide {
+  @apply grid-cols-sidebar;
 }

@@ -9,45 +9,61 @@
     <title>Dashboard Layout</title>
   </head>
   <body>
-    <div class="main md:grid md:grid-cols-sidebar">
+    <div class="main md:grid md:grid-cols-minisidebar lg:grid-cols-sidebar">
       <div
-        class="left-side fixed h-screen w-full md:relative md:h-full md:w-full bg-black bg-opacity-0 text-white -translate-x-full transition-all ease-in-out duration-1000 md:translate-x-0 z-10"
+        class="left-side fixed h-screen w-leftSide md:relative md:h-full md:w-full bg-secondary-400 text-white -translate-x-full transition-all ease-in-out duration-1000 md:translate-x-0 z-10 shadow-leftPanel show"
       >
-        <div class="body w-96 bg-slate-700 p-4 flex gap-4 h-full">
-          <div class="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-            ducimus fugit neque fuga modi explicabo quo maiores aperiam natus
-            velit voluptatem mollitia illum incidunt enim voluptas amet
-            reiciendis omnis debitis, alias dolores deserunt! Maxime ea,
-            consequuntur voluptatum ab quasi labore dicta nostrum fugit! Eaque,
-            labore? Ut maiores aut, atque quas nostrum odit sint itaque nesciunt
-            pariatur excepturi omnis earum. Officia recusandae laboriosam
-            repellendus accusamus ullam. Quasi doloremque error tempora illum
-            culpa rerum veritatis minus quia, molestiae suscipit corrupti magnam
-            consequuntur placeat ratione, ut voluptatum sed fugiat dignissimos
-            tenetur tempore quod. Aliquam suscipit quaerat ullam eum debitis ea
-            cupiditate accusantium veniam!
-          </div>
-          <div class="close-icon md:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6 cursor-pointer"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M6 18L18 6M6 6l12 12"
+        <div class="body flex flex-col gap-4 h-full">
+          <nav
+            class="h-nav flex justify-between items-center md:justify-center md:grid md:place-items-center px-4 sticky top-0"
+          >
+            <div class="big-logo w-28 hidden lg:block">
+              <img
+                src="https://coderthemes.com/hyper/saas/assets/images/logo.png"
+                alt=""
+                class="w-full h-full object-cover"
               />
-            </svg>
-          </div>
+            </div>
+            <div class="small-logo w-8 lg:hidden">
+              <img
+                src="https://coderthemes.com/hyper/saas/assets/images/logo-sm.png"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="close-icon text-gray-400 hover:text-white transition md:hidden"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 cursor-pointer"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </div>
+          </nav>
+          <div class="text"></div>
         </div>
       </div>
       <div class="right-side bg-blue-700 text-white min-h-screen">
-        <nav class="bg-gray-900 p-4 fixed w-full">
+        <nav
+          class="bg-secondary-400 p-4 w-full h-nav shadow-navbar flex items-center text-gray-400 gap-4 sticky top-0"
+        >
+          <div class="w-8 md:hidden">
+            <img
+              src="https://coderthemes.com/hyper/saas/assets/images/logo-sm.png"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
           <div class="menu-icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
